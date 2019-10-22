@@ -21,8 +21,8 @@ public class Prob140 {
 		System.out.println(input);
 		int i=0;
 		int prev=0;
-		while(i<input.size()) {
-			if(input.get(i)!=prev) {
+		while(i<input.size()-1) {
+			if(input.get(i+1)!=prev) {
 				st.add(input.get(i));
 			}else {
 				st.pop();
